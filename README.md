@@ -98,6 +98,7 @@ This document outlines the database design for a social networking platform spec
 ### 1. Follows
 - Source: User
 - Destination: User
+
 **Properties:**
 - since (datetime): Connection start time
 
@@ -106,6 +107,7 @@ This document outlines the database design for a social networking platform spec
 ### 2. Created
 - Source: User
 - Destination: Post
+
 **Properties:**
 - timestamp (datetime): Creation time
 - visibility (string): Public/Private/Group
@@ -115,6 +117,7 @@ This document outlines the database design for a social networking platform spec
 ### 3. Liked
 - Source: User
 - Destination: Post
+
 **Properties:**
 - timestamp (datetime): Like time
 - reactionType (string): Type of reaction
@@ -124,6 +127,7 @@ This document outlines the database design for a social networking platform spec
 ### 4. Commented
 - Source: User
 - Destination: Post
+
 **Properties:**
 - timestamp (datetime)
 - content (string)  
@@ -133,6 +137,7 @@ This document outlines the database design for a social networking platform spec
 ### 5. Reposted
 - Source: User
 - Destination: Post
+
 **Properties:**
 - timestamp (datetime): Share time
 
@@ -141,6 +146,7 @@ This document outlines the database design for a social networking platform spec
 ### 6. Member of
 - Source: User
 - Destination: Group
+
 **Properties:**
 - joinDate (datetime): Group join date
 - role (string): Member/Admin/Moderator
@@ -151,6 +157,7 @@ This document outlines the database design for a social networking platform spec
 ### 7. Attending
 - Source: User
 - Destination: Event
+
 **Properties:**
 - registrationDate (datetime): Registration time
 - status (string): Confirmed/Waitlisted/Cancelled
@@ -160,6 +167,7 @@ This document outlines the database design for a social networking platform spec
 ### 8. Contains
 - Source: Group
 - Destination: Post
+
 **Properties:**
 - timestamp (datetime): Post time in group
 - pinnedStatus (boolean): Pinned state
@@ -169,6 +177,7 @@ This document outlines the database design for a social networking platform spec
 ### 9. Sent
 - Source: User
 - Destination: DirectMessage
+
 **Properties:**
 - timestamp (datetime): Send time
 - status (string): Sent/Delivered
@@ -177,6 +186,7 @@ This document outlines the database design for a social networking platform spec
 
 ### 10. Received
 - Destination: DirectMessage
+
 **Properties:**
 - readTimestamp (datetime): Read time
 - notificationStatus (string): Sent/Delivered/Read
@@ -186,6 +196,7 @@ This document outlines the database design for a social networking platform spec
 ### 11. Has interest
 - Source: User
 - Destination: Interest
+
 **Properties:**
 - addedDate (datetime): When interest was added
 
