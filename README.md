@@ -1,5 +1,6 @@
 
 # VandyLink Social Network 
+> Fall 2024
 
 ## Overview 
 This document outlines the database design for a social networking platform specifically tailored for the DSI (Data Science Institute) community at Vanderbilt University . The platform facilitates professional connections, knowledge sharing, and community engagement among data science students, alumni, and faculty.
@@ -7,6 +8,9 @@ This document outlines the database design for a social networking platform spec
 ## Sketch 
 
 ![schema sketch](vandylink_sketch.png)
+
+## Neo4j Visual Representation 
+![neo4j ui](neo4j_ui_ss.png)
 
 ## Node Types
 
